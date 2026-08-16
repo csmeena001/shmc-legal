@@ -32,12 +32,12 @@
 <header>
   <div class="kicker">Shree Hari AI Micro Coach CS</div>
   <h1>Privacy Policy &amp; Terms of Use</h1>
-  <div class="meta">Developer: Chandra Shekhar · Last updated: 16 August 2026 · Applies to app version 1.1 and later unless superseded</div>
+  <div class="meta">Developer: Chandra Shekhar · Last updated: 16 August 2026 · Applies to app version 1.3 and later unless superseded</div>
 </header>
 
-<div class="callout"><strong>The whole policy in one sentence:</strong> this app collects <strong>no data whatsoever</strong> — everything you do in it is stored only on your own device, and the released app is built <strong>without internet permission</strong>, so it is technically incapable of sending your information anywhere. Even the optional microphone feature described in §4 works entirely on your device: it senses <em>whether</em> you are speaking, and never records, saves, or transmits sound.</div>
+<div class="callout"><strong>The whole policy in one sentence:</strong> this app collects <strong>no data whatsoever</strong> — everything you do in it is stored only on your own device, and the released app is built <strong>without internet permission</strong>, so it is technically incapable of sending your information anywhere. The optional speaking features described in §4 never record or save your voice: your phone converts your speech to text for immediate feedback, that text is shown to you and then discarded, and only plain numbers — such as how many seconds you spoke — are kept on your device.</div>
 
-<div class="hindi"><strong>हिंदी सारांश:</strong> यह ऐप आपका कोई भी डेटा एकत्र नहीं करता। आपकी प्राथमिकताएँ, मिशन और स्ट्रीक केवल आपके अपने फ़ोन में रहते हैं। रिलीज़ किए गए ऐप में इंटरनेट की अनुमति ही नहीं है, इसलिए यह आपकी जानकारी कहीं भेज ही नहीं सकता। वैकल्पिक "बोल-मीटर" सुविधा (जो आप स्वयं चालू करते हैं) केवल यह महसूस करती है कि आप बोल रहे हैं या नहीं — आपकी आवाज़ न रिकॉर्ड होती है, न सहेजी जाती है, न कहीं भेजी जाती है। ऐप हटाने या "Erase all my data" दबाने पर सब कुछ स्थायी रूप से मिट जाता है।</div>
+<div class="hindi"><strong>हिंदी सारांश:</strong> यह ऐप आपका कोई भी डेटा एकत्र नहीं करता। आपकी प्राथमिकताएँ, मिशन और स्ट्रीक केवल आपके अपने फ़ोन में रहते हैं। रिलीज़ किए गए ऐप में इंटरनेट की अनुमति ही नहीं है, इसलिए यह आपकी जानकारी कहीं भेज ही नहीं सकता। वैकल्पिक बोलने-संबंधी सुविधाएँ आपकी आवाज़ को न रिकॉर्ड करती हैं, न सहेजती हैं — आपका फ़ोन आपकी बात को तुरंत टेक्स्ट में बदलता है, वह टेक्स्ट आपको दिखाकर मिटा दिया जाता है, और केवल संख्याएँ (जैसे आपने कितने सेकंड बोला) आपके फ़ोन में रहती हैं। ऐप हटाने या "Erase all my data" दबाने पर सब कुछ स्थायी रूप से मिट जाता है।</div>
 
 <h2>Part A — Privacy Policy</h2>
 
@@ -51,29 +51,36 @@
   <li><strong>No analytics, no trackers, no advertising SDKs.</strong> No Firebase, no ad networks, no crash-reporting services, no third-party code that phones home.</li>
   <li><strong>No server.</strong> We operate no backend. There is nowhere for your data to go.</li>
   <li><strong>No internet permission.</strong> The released Android app does not declare the INTERNET permission. This is not merely a promise — it is a technical property of the app: it cannot open a network connection.</li>
-  <li><strong>No recording of any kind.</strong> The App never creates an audio file, never saves sound, and performs no speech recognition or transcription. See §4.</li>
+  <li><strong>No recording of any kind.</strong> The App never creates an audio file and never saves sound. It can convert your speech to text for immediate feedback, but that text is never saved and never sent to us. See §4.</li>
 </ul>
 
 <h3>3. Data stored on your device only</h3>
-<p>To function, the App saves the following <em>locally on your device</em>: your chosen language, focus areas, difficulty, coach tone, Sankalp setting, reminder time, whether the Bol-Meter is switched on, and your daily mission history (which mission, completed or skipped, and streaks). This information never leaves your device, is never visible to us, and is protected by your device's own security (screen lock, encryption).</p>
+<p>To function, the App saves the following <em>locally on your device</em>: your chosen language, focus areas, difficulty, coach tone, Sankalp setting, reminder time, whether the speaking features are switched on, plain numbers about how you spoke (for example seconds spoken, number of pauses, words per minute, filler rate, accuracy percentages), and your daily mission history (which mission, completed or skipped, and streaks). This information never leaves your device, is never visible to us, and is protected by your device's own security (screen lock, encryption).</p>
 
-<h3>4. The Bol-Meter — the optional microphone feature</h3>
-<p>The App includes an optional feature called the <strong>Bol-Meter</strong>, which helps you confirm that you actually spoke aloud during an English-speaking mission. It is <strong>switched off by default</strong> and only ever operates if you turn it on yourself in Settings.</p>
-<p>When it is on, and only while a 30-second speaking mission is actively running, the App reads the microphone to measure <em>how loud the sound around you is</em> — nothing more. From that, it determines only one thing: whether you appear to be speaking at this moment. It uses this to brighten the on-screen flame as you speak and to mark the mission complete once you have spoken for enough of the 30 seconds.</p>
+<h3>4. The speaking features — the optional microphone</h3>
+<p>The App includes optional speaking features. They are <strong>switched off by default</strong> and operate only if you turn them on yourself and grant the microphone permission. Everything below applies only while a speaking mission is actively running — never in the background.</p>
+
+<p><strong>4.1 The Bol-Meter.</strong> While you speak, the App measures <em>how loud</em> the sound around you is, in order to sense whether you are speaking, brighten the flame as you speak, and record how long you spoke. This is loudness detection only — no words are involved.</p>
+
+<p><strong>4.2 Speech to text.</strong> To give you feedback on your English, the App asks your phone to convert what you said into text, using your device's own speech-recognition service. Depending on your device, its settings and the languages installed, that conversion may happen entirely on your phone, or your phone's speech service may perform it online. That behaviour belongs to your device and to the provider of its speech service, and is governed by their terms, not ours. The App itself has no internet permission and sends nothing anywhere.</p>
+
+<p><strong>4.3 What is done with the text, and what happens to it.</strong> The recognised text is used immediately, on your device, to show you what you said, to count words, pauses, filler words and speaking speed, to compare your reading against a given sentence, and to point out a few common English patterns. It is then <strong>shown to you and discarded</strong>.</p>
+
 <p>What this means precisely:</p>
 <ul>
-  <li><strong>No recording.</strong> No audio file is ever created, on your device or anywhere else.</li>
-  <li><strong>No storage.</strong> Sound is measured moment by moment and immediately discarded. Nothing derived from your voice is saved — not even the loudness readings.</li>
-  <li><strong>No speech recognition.</strong> The App does not detect words, language, meaning, or the identity of the speaker. It cannot tell what you said, and does not try.</li>
-  <li><strong>No transmission.</strong> As the App has no internet permission, nothing can be sent anywhere, by design and by technical impossibility.</li>
-  <li><strong>Only while the timer runs.</strong> The microphone is opened when a speaking mission begins and released as soon as it ends, is completed, is skipped, or you leave the screen. It is never used in the background.</li>
-  <li><strong>Fully optional.</strong> You may decline the microphone permission, or switch the Bol-Meter off at any time. Every mission can always be marked complete by hand, and the App remains fully usable without it.</li>
+  <li><strong>No recording.</strong> No audio file is ever created by the App, on your device or anywhere else.</li>
+  <li><strong>No transcript is stored.</strong> The words you spoke are never saved by the App — not in your history, not in your progress, nowhere.</li>
+  <li><strong>Only numbers are kept.</strong> The App stores plain figures on your device — for example seconds spoken, longest unbroken stretch, number of pauses, words per minute, filler rate, accuracy percentage — never the words themselves.</li>
+  <li><strong>Nothing is sent to us.</strong> We operate no server and receive nothing. The App declares no internet permission.</li>
+  <li><strong>Only while a mission runs.</strong> The microphone opens when a speaking mission begins and is released the moment it ends, is completed, is skipped, or you leave the screen.</li>
+  <li><strong>Fully optional.</strong> You may decline the microphone permission or switch the speaking features off at any time; every mission can always be completed by hand, and the App works fully without them.</li>
+  <li><strong>Feedback is limited and honest.</strong> Speech recognition is imperfect, and the App checks only a fixed list of common English patterns. It is a practice aid, not a language assessment.</li>
 </ul>
 
 <h3>5. Permissions the App uses, and why</h3>
 <ul>
   <li><strong>Notifications</strong> — solely to show the one daily reminder at the time you choose. You may decline this permission or disable notifications at any time; the App works fully without it.</li>
-  <li><strong>Microphone (optional, off by default)</strong> — used only for the Bol-Meter described in §4, and only while a speaking mission is running. Nothing is recorded, saved, or transmitted. You may decline this permission; the App works fully without it.</li>
+  <li><strong>Microphone (optional, off by default)</strong> — used only for the speaking features described in §4, and only while a speaking mission is running. No audio is recorded or saved, and no text is stored. You may decline this permission; the App works fully without it.</li>
 </ul>
 <p>The App requests <strong>no other permission</strong>: no camera, no location, no contacts, no call logs, no SMS, no file storage access.</p>
 
@@ -89,15 +96,15 @@
 <p>The App is a general-audience self-improvement tool and is not directed at children under 13. Because the App collects no data from any user, it collects no data from children.</p>
 
 <h3>8. Data protection laws</h3>
-<p>The App is designed around the strictest reading of data-minimization principles, including those underlying India's Digital Personal Data Protection Act, 2023 and the EU GDPR: the simplest way to protect personal data is to never collect it, and that is what we do. Sound sensed by the Bol-Meter is processed ephemerally on your device and is never retained or sent, so it is not collected either. Since no personal data is processed by us, rights requests (access, correction, erasure, portability) are satisfied by design — your data exists only in your hands.</p>
+<p>The App is designed around the strictest reading of data-minimization principles, including those underlying India's Digital Personal Data Protection Act, 2023 and the EU GDPR: the simplest way to protect personal data is to never collect it, and that is what we do. Sound sensed by the microphone is processed ephemerally and is never retained by the App or sent to us; the text your device produces from your speech is likewise used once and discarded, and only plain numbers remain on your device. Where your device's own speech service performs the conversion online, that processing is carried out by your device provider under its own privacy terms. Since no personal data is processed by us, rights requests (access, correction, erasure, portability) are satisfied by design — your data exists only in your hands.</p>
 
 <h3>9. Third-party services</h3>
-<p>None. The App embeds no third-party service. If you obtained the App through Google Play, Google's own store services (downloads, updates, reviews) are governed by Google's privacy policy, which is independent of the App.</p>
+<p>The App embeds no third-party service, no analytics and no advertising. It does use one facility of your own phone: its speech-recognition service, described in §4, which is provided by your device manufacturer or operating-system provider and governed by their privacy terms. If you obtained the App through Google Play, Google's own store services (downloads, updates, reviews) are governed by Google's privacy policy, which is independent of the App.</p>
 
 <h3>10. Changes to this policy</h3>
 <p>If a future version of the App ever changes any of the above — for example, an optional online feature — this policy will be updated at this page <em>before</em> that version is released, with a new "Last updated" date and a clear description of the change. The current version's guarantees remain true for the current version.</p>
 
-<div class="changelog"><strong>What changed in this update (16 August 2026):</strong> the optional Bol-Meter microphone feature was added to the App, so this policy now describes it in full (§4) and lists the microphone under permissions (§5). The App's design is otherwise unchanged: no data is collected, no audio is recorded or stored, and the released app still has no internet permission. Published before the version containing this feature was released, as promised in §10.</div>
+<div class="changelog"><strong>What changed in this update (16 August 2026):</strong> the App's speaking features were extended. In addition to the Bol-Meter's loudness sensing, the App can now ask your phone's own speech-recognition service to convert what you said into text, in order to show you your words and give feedback on your spoken English (§4). Two consequences are stated plainly: depending on your device and its settings, that conversion may be performed online by your phone's speech service, which is outside the App and governed by your device provider's terms; and the App now stores plain numbers about how you spoke — seconds, pauses, speed, accuracy — on your device (§3). The App still creates no audio recording, never stores the words you spoke, has no server, receives nothing, and declares no internet permission. Published before the version containing these features was released, as promised in §10.</div>
 
 <h2>Part B — Terms of Use &amp; Disclaimers</h2>
 
@@ -106,7 +113,7 @@
 
 <h3>2. What the App is — and is not</h3>
 <p>The App offers short, general self-improvement prompts ("missions") for motivation and habit-building. It is provided for <strong>informational and motivational purposes only</strong>. It is <strong>not</strong> medical advice, mental-health treatment, therapy, physiotherapy, fitness instruction, or professional advice of any kind, and it does not diagnose, treat, or cure any condition. The word "AI" in the App's name refers to its adaptive design; the App does not provide professional guidance.</p>
-<p>The Bol-Meter is not a language test, a pronunciation checker, or an assessment of any kind. It senses only whether sound is being spoken; it does not evaluate your speech, and its result is not a measure of ability or progress.</p>
+<p>The speaking features are a practice aid, not a language test, examination, certification or professional assessment. Speech recognition is imperfect and may misread what you said, particularly in noise or with an unfamiliar accent; the pattern suggestions cover only a fixed list of common usages and are not a complete grammar check. Numbers such as speaking speed or accuracy describe a single 30-second attempt on one device and are not a measure of your ability, your English level, or your progress in any formal sense. Do not rely on them for any examination, employment or academic purpose.</p>
 
 <h3>3. Health and safety</h3>
 <p>Some missions involve light physical activity (for example, stretching, squats, a plank). Perform any physical mission only within your own ability and comfort. If you have any medical condition, injury, or doubt, consult a qualified physician before attempting physical activities, and stop immediately if you feel pain, dizziness, or discomfort. You voluntarily assume all risk arising from your performance of any mission.</p>
