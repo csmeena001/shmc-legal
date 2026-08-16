@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy & Terms — Shree Hari AI Micro Coach CS</title>
+<title>Privacy Policy &amp; Terms — Shree Hari AI Micro Coach CS</title>
 <style>
   :root{--indigo:#1A3C8E;--saffron:#F4A300;--ink:#1c2333;--soft:#5b6478;--line:#e6e9f2;--bg:#fbfbfd}
   *{margin:0;padding:0;box-sizing:border-box}
@@ -19,6 +19,8 @@
   ul{padding-left:22px;margin-bottom:10px}
   .callout{background:#fff7e8;border:1px solid #f2ddb0;border-left:4px solid var(--saffron);border-radius:8px;padding:14px 16px;margin:18px 0;font-family:system-ui,sans-serif;font-size:15px}
   .hindi{background:#eef2fb;border:1px solid #d8e0f5;border-left:4px solid var(--indigo);border-radius:8px;padding:14px 16px;margin:18px 0;font-size:15.5px}
+  .changelog{background:#f4f6fb;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:18px 0;font-family:system-ui,sans-serif;font-size:14px;color:var(--soft)}
+  .changelog strong{color:var(--ink)}
   .sig{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-family:system-ui,sans-serif;font-size:13.5px;color:var(--soft)}
   strong{color:var(--ink)}
   a{color:var(--indigo)}
@@ -30,12 +32,12 @@
 <header>
   <div class="kicker">Shree Hari AI Micro Coach CS</div>
   <h1>Privacy Policy &amp; Terms of Use</h1>
-  <div class="meta">Developer: Chandra Shekhar · Last updated: 15 August 2026 · Applies to app version 1.0 and later unless superseded</div>
+  <div class="meta">Developer: Chandra Shekhar · Last updated: 16 August 2026 · Applies to app version 1.1 and later unless superseded</div>
 </header>
 
-<div class="callout"><strong>The whole policy in one sentence:</strong> this app collects <strong>no data whatsoever</strong> — everything you do in it is stored only on your own device, and the released app is built <strong>without internet permission</strong>, so it is technically incapable of sending your information anywhere.</div>
+<div class="callout"><strong>The whole policy in one sentence:</strong> this app collects <strong>no data whatsoever</strong> — everything you do in it is stored only on your own device, and the released app is built <strong>without internet permission</strong>, so it is technically incapable of sending your information anywhere. Even the optional microphone feature described in §4 works entirely on your device: it senses <em>whether</em> you are speaking, and never records, saves, or transmits sound.</div>
 
-<div class="hindi"><strong>हिंदी सारांश:</strong> यह ऐप आपका कोई भी डेटा एकत्र नहीं करता। आपकी प्राथमिकताएँ, मिशन और स्ट्रीक केवल आपके अपने फ़ोन में रहते हैं। रिलीज़ किए गए ऐप में इंटरनेट की अनुमति ही नहीं है, इसलिए यह आपकी जानकारी कहीं भेज ही नहीं सकता। ऐप हटाने या "Erase all my data" दबाने पर सब कुछ स्थायी रूप से मिट जाता है।</div>
+<div class="hindi"><strong>हिंदी सारांश:</strong> यह ऐप आपका कोई भी डेटा एकत्र नहीं करता। आपकी प्राथमिकताएँ, मिशन और स्ट्रीक केवल आपके अपने फ़ोन में रहते हैं। रिलीज़ किए गए ऐप में इंटरनेट की अनुमति ही नहीं है, इसलिए यह आपकी जानकारी कहीं भेज ही नहीं सकता। वैकल्पिक "बोल-मीटर" सुविधा (जो आप स्वयं चालू करते हैं) केवल यह महसूस करती है कि आप बोल रहे हैं या नहीं — आपकी आवाज़ न रिकॉर्ड होती है, न सहेजी जाती है, न कहीं भेजी जाती है। ऐप हटाने या "Erase all my data" दबाने पर सब कुछ स्थायी रूप से मिट जाता है।</div>
 
 <h2>Part A — Privacy Policy</h2>
 
@@ -49,18 +51,33 @@
   <li><strong>No analytics, no trackers, no advertising SDKs.</strong> No Firebase, no ad networks, no crash-reporting services, no third-party code that phones home.</li>
   <li><strong>No server.</strong> We operate no backend. There is nowhere for your data to go.</li>
   <li><strong>No internet permission.</strong> The released Android app does not declare the INTERNET permission. This is not merely a promise — it is a technical property of the app: it cannot open a network connection.</li>
+  <li><strong>No recording of any kind.</strong> The App never creates an audio file, never saves sound, and performs no speech recognition or transcription. See §4.</li>
 </ul>
 
 <h3>3. Data stored on your device only</h3>
-<p>To function, the App saves the following <em>locally on your device</em>: your chosen language, focus areas, difficulty, coach tone, Sankalp setting, reminder time, and your daily mission history (which mission, completed or skipped, and streaks). This information never leaves your device, is never visible to us, and is protected by your device's own security (screen lock, encryption).</p>
+<p>To function, the App saves the following <em>locally on your device</em>: your chosen language, focus areas, difficulty, coach tone, Sankalp setting, reminder time, whether the Bol-Meter is switched on, and your daily mission history (which mission, completed or skipped, and streaks). This information never leaves your device, is never visible to us, and is protected by your device's own security (screen lock, encryption).</p>
 
-<h3>4. Permissions the App uses, and why</h3>
+<h3>4. The Bol-Meter — the optional microphone feature</h3>
+<p>The App includes an optional feature called the <strong>Bol-Meter</strong>, which helps you confirm that you actually spoke aloud during an English-speaking mission. It is <strong>switched off by default</strong> and only ever operates if you turn it on yourself in Settings.</p>
+<p>When it is on, and only while a 30-second speaking mission is actively running, the App reads the microphone to measure <em>how loud the sound around you is</em> — nothing more. From that, it determines only one thing: whether you appear to be speaking at this moment. It uses this to brighten the on-screen flame as you speak and to mark the mission complete once you have spoken for enough of the 30 seconds.</p>
+<p>What this means precisely:</p>
+<ul>
+  <li><strong>No recording.</strong> No audio file is ever created, on your device or anywhere else.</li>
+  <li><strong>No storage.</strong> Sound is measured moment by moment and immediately discarded. Nothing derived from your voice is saved — not even the loudness readings.</li>
+  <li><strong>No speech recognition.</strong> The App does not detect words, language, meaning, or the identity of the speaker. It cannot tell what you said, and does not try.</li>
+  <li><strong>No transmission.</strong> As the App has no internet permission, nothing can be sent anywhere, by design and by technical impossibility.</li>
+  <li><strong>Only while the timer runs.</strong> The microphone is opened when a speaking mission begins and released as soon as it ends, is completed, is skipped, or you leave the screen. It is never used in the background.</li>
+  <li><strong>Fully optional.</strong> You may decline the microphone permission, or switch the Bol-Meter off at any time. Every mission can always be marked complete by hand, and the App remains fully usable without it.</li>
+</ul>
+
+<h3>5. Permissions the App uses, and why</h3>
 <ul>
   <li><strong>Notifications</strong> — solely to show the one daily reminder at the time you choose. You may decline this permission or disable notifications at any time; the App works fully without it.</li>
+  <li><strong>Microphone (optional, off by default)</strong> — used only for the Bol-Meter described in §4, and only while a speaking mission is running. Nothing is recorded, saved, or transmitted. You may decline this permission; the App works fully without it.</li>
 </ul>
-<p>The App requests <strong>no other permission</strong>: no camera, no microphone, no location, no contacts, no call logs, no SMS, no file storage access.</p>
+<p>The App requests <strong>no other permission</strong>: no camera, no location, no contacts, no call logs, no SMS, no file storage access.</p>
 
-<h3>5. Deleting your data</h3>
+<h3>6. Deleting your data</h3>
 <p>You are in complete control:</p>
 <ul>
   <li>Tap <strong>"Erase all my data"</strong> in Settings — everything is permanently deleted immediately; or</li>
@@ -68,17 +85,19 @@
 </ul>
 <p>Because no copy ever exists outside your device, there is nothing further for us to delete, and no deletion request to us is necessary — though you are welcome to write to us with any question.</p>
 
-<h3>6. Children</h3>
+<h3>7. Children</h3>
 <p>The App is a general-audience self-improvement tool and is not directed at children under 13. Because the App collects no data from any user, it collects no data from children.</p>
 
-<h3>7. Data protection laws</h3>
-<p>The App is designed around the strictest reading of data-minimization principles, including those underlying India's Digital Personal Data Protection Act, 2023 and the EU GDPR: the simplest way to protect personal data is to never collect it, and that is what we do. Since no personal data is processed by us, rights requests (access, correction, erasure, portability) are satisfied by design — your data exists only in your hands.</p>
+<h3>8. Data protection laws</h3>
+<p>The App is designed around the strictest reading of data-minimization principles, including those underlying India's Digital Personal Data Protection Act, 2023 and the EU GDPR: the simplest way to protect personal data is to never collect it, and that is what we do. Sound sensed by the Bol-Meter is processed ephemerally on your device and is never retained or sent, so it is not collected either. Since no personal data is processed by us, rights requests (access, correction, erasure, portability) are satisfied by design — your data exists only in your hands.</p>
 
-<h3>8. Third-party services</h3>
+<h3>9. Third-party services</h3>
 <p>None. The App embeds no third-party service. If you obtained the App through Google Play, Google's own store services (downloads, updates, reviews) are governed by Google's privacy policy, which is independent of the App.</p>
 
-<h3>9. Changes to this policy</h3>
+<h3>10. Changes to this policy</h3>
 <p>If a future version of the App ever changes any of the above — for example, an optional online feature — this policy will be updated at this page <em>before</em> that version is released, with a new "Last updated" date and a clear description of the change. The current version's guarantees remain true for the current version.</p>
+
+<div class="changelog"><strong>What changed in this update (16 August 2026):</strong> the optional Bol-Meter microphone feature was added to the App, so this policy now describes it in full (§4) and lists the microphone under permissions (§5). The App's design is otherwise unchanged: no data is collected, no audio is recorded or stored, and the released app still has no internet permission. Published before the version containing this feature was released, as promised in §10.</div>
 
 <h2>Part B — Terms of Use &amp; Disclaimers</h2>
 
@@ -87,32 +106,36 @@
 
 <h3>2. What the App is — and is not</h3>
 <p>The App offers short, general self-improvement prompts ("missions") for motivation and habit-building. It is provided for <strong>informational and motivational purposes only</strong>. It is <strong>not</strong> medical advice, mental-health treatment, therapy, physiotherapy, fitness instruction, or professional advice of any kind, and it does not diagnose, treat, or cure any condition. The word "AI" in the App's name refers to its adaptive design; the App does not provide professional guidance.</p>
+<p>The Bol-Meter is not a language test, a pronunciation checker, or an assessment of any kind. It senses only whether sound is being spoken; it does not evaluate your speech, and its result is not a measure of ability or progress.</p>
 
 <h3>3. Health and safety</h3>
 <p>Some missions involve light physical activity (for example, stretching, squats, a plank). Perform any physical mission only within your own ability and comfort. If you have any medical condition, injury, or doubt, consult a qualified physician before attempting physical activities, and stop immediately if you feel pain, dizziness, or discomfort. You voluntarily assume all risk arising from your performance of any mission.</p>
 
-<h3>4. No warranties</h3>
-<p>The App is provided <strong>"as is" and "as available"</strong>, without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, accuracy, or uninterrupted availability.</p>
+<h3>4. Speaking missions and your surroundings</h3>
+<p>Speaking missions ask you to speak aloud. Please use your own judgement about where you do so — for example, not while driving, and not where speaking aloud would disturb others or reveal something you would rather keep private. You are responsible for choosing an appropriate time and place.</p>
 
-<h3>5. Limitation of liability</h3>
+<h3>5. No warranties</h3>
+<p>The App is provided <strong>"as is" and "as available"</strong>, without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, accuracy, or uninterrupted availability. Microphone sensitivity varies between devices and surroundings, so the Bol-Meter may not always register your voice accurately; you can always mark a mission complete by hand.</p>
+
+<h3>6. Limitation of liability</h3>
 <p>To the maximum extent permitted by applicable law, Chandra Shekhar shall not be liable for any indirect, incidental, special, consequential, or exemplary damages, or for any loss of data, arising out of or relating to your use of (or inability to use) the App. Where liability cannot be excluded, it is limited to the amount you paid for the App — which, for this free App, is zero.</p>
 
-<h3>6. Intellectual property</h3>
+<h3>7. Intellectual property</h3>
 <p>The App, its name, design, and all mission content are © 2026 Chandra Shekhar, all rights reserved. You are granted a personal, non-transferable, non-commercial licence to use the App. You may not copy, resell, redistribute, or create derivative works from the App or its content without written permission.</p>
 
-<h3>7. Acceptable use</h3>
+<h3>8. Acceptable use</h3>
 <p>You agree not to use the App for any unlawful purpose, and not to reverse-engineer, decompile, or tamper with it except as permitted by applicable law.</p>
 
-<h3>8. Changes to the App and these Terms</h3>
+<h3>9. Changes to the App and these Terms</h3>
 <p>The App may be updated, changed, or discontinued at any time. Material changes to these Terms will be posted on this page with a new "Last updated" date; continued use after changes constitutes acceptance.</p>
 
-<h3>9. Severability</h3>
+<h3>10. Severability</h3>
 <p>If any provision of these Terms is held invalid, the remaining provisions continue in full force.</p>
 
-<h3>10. Governing law and jurisdiction</h3>
+<h3>11. Governing law and jurisdiction</h3>
 <p>These Terms and this Policy are governed by the laws of India. Subject to any mandatory consumer-law rights you hold, the courts at Jaipur, Rajasthan shall have exclusive jurisdiction over disputes arising from the App.</p>
 
-<h3>11. Contact &amp; grievances</h3>
+<h3>12. Contact &amp; grievances</h3>
 <p>For any question, concern, or grievance about the App, this Policy, or these Terms, write to <strong>jmd9cs@protonmail.com</strong>. We aim to respond promptly.</p>
 
 <div class="sig">Shree Hari AI Micro Coach CS · Micro habits. Macro blessings. · © 2026 Chandra Shekhar</div>
